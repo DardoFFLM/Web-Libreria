@@ -1,9 +1,10 @@
-
+.background{
+  background-color: rgb(95, 95, 175) ;
+}
 .bookcontainer{
-     display: flex;
      width: 100%;
      height: auto;
-     background-color: #99cc33;
+     background-color:coral;
      color: white;
      border-radius: 5%;
      margin-right: 1%;
@@ -14,7 +15,7 @@
 }
 .encabezado {
     height: 50px;
-    background-color: #CCCCCC;
+    background-color: rgb(41, 39, 39);
   }
 .contenedor {
     height: 100%;
@@ -24,7 +25,5 @@
   }
 
 .pie {
-    background-color: rgb(11, 195, 241);
+    background-color: rgb(35, 55, 122);
   }
-
-  
