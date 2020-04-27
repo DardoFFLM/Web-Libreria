@@ -2,6 +2,7 @@
   background-color: rgb(95, 95, 175) ;
 }
 .bookcontainer{
+  padding: 5px;
   align-self: center;
   width: auto;
   height: auto;
@@ -14,21 +15,27 @@
 
 }
 .encabezado {
+  padding: 5px;
+    position: sticky;
     height: 50px;
     background-color: rgb(41, 39, 39);
+    border-radius: 10px;
   }
 .contenedor {
-  display: flex;
+  
+    justify-content: center;
+    display: flex;
     align-self: center;
     flex-wrap: wrap;
     height: 100%;
     display: flex;
-    justify-content: space-between;
     margin: 5px;
   }
 
 .pie {
-    background-color: rgb(35, 55, 122);
+    background-color: rgb(41, 39, 39);
+    border-radius: 10px;
+    padding: 5px;
   }
 .libro{
   align-self: center;
@@ -41,4 +48,7 @@
   margin-bottom: 1%;
   margin-top: 1%;
 }
-.background
+.bookcontainer img{
+  width: 164px ;
+  height: 260px;
+}
