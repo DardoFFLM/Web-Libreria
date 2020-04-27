@@ -18,6 +18,8 @@
     background-color: rgb(41, 39, 39);
   }
 .contenedor {
+  display: flex;
+    align-self: center;
     flex-wrap: wrap;
     height: 100%;
     display: flex;
@@ -28,3 +30,17 @@
 .pie {
     background-color: rgb(35, 55, 122);
   }
+.libro{
+  align-self: center;
+  width: auto;
+  height: auto;
+  background-color:coral;
+  border-radius: 5%;
+  margin-right: 1%;
+  margin-left: 1%;
+  margin-bottom: 1%;
+  margin-top: 1%;
+}
+.img{
+  width: ;
+}
