@@ -1,54 +1,98 @@
-.background{
-  background-color: rgb(95, 95, 175) ;
+.background {
+  background-color: rgb(141, 141, 211);
+  justify-content: center;
+  color: aliceblue;
 }
-.bookcontainer{
-  padding: 5px;
-  align-self: center;
-  width: auto;
-  height: auto;
-  background-color:coral;
-  border-radius: 5%;
-  margin-right: 1%;
-  margin-left: 1%;
-  margin-bottom: 1%;
-  margin-top: 1%;
 
-}
-.encabezado {
-  padding: 5px;
-    position: sticky;
-    height: 50px;
-    background-color: rgb(41, 39, 39);
-    border-radius: 10px;
-  }
 .contenedor {
-  
-    justify-content: center;
-    display: flex;
-    align-self: center;
-    flex-wrap: wrap;
-    height: 100%;
-    display: flex;
-    margin: 5px;
-  }
-
-.pie {
-    background-color: rgb(41, 39, 39);
-    border-radius: 10px;
-    padding: 5px;
-  }
-.libro{
-  align-self: center;
-  width: auto;
-  height: auto;
-  background-color:coral;
-  border-radius: 5%;
-  margin-right: 1%;
-  margin-left: 1%;
-  margin-bottom: 1%;
-  margin-top: 1%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  margin: 5px auto;
 }
-.bookcontainer img{
-  width: 164px ;
+
+
+.bookcontainer {
+  padding: 5px;
+  height: 300px;
+  width: 165px;
+  background-color: coral;
+  border-radius: 10px;
+  margin: 1% auto;
+  overflow: hidden;
+}
+
+.bookcontainer p,
+a {
+  text-decoration: none;
+  text-align: center;
+}
+
+.bookcontainer img {
+  width: 164px;
   height: 260px;
 }
+
+.encabezado {
+  width: 99%;
+  padding: 5px;
+  position: sticky;
+  background-color: rgb(41, 39, 39);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.encabezado h1 {
+  font-family: 'Righteous', cursive;
+}
+
+.logo img {
+  background-color: inherit;
+  width: 100px;
+  height: 100px;
+}
+
+nav ul {
+  
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  background-color: rgb(253, 253, 253);
+  border-radius: 10px;
+  color: rgb(17, 17, 17);
+
+}
+
+nav li{
+  margin: 10px;
+}
+
+footer {
+  background-color: rgb(41, 39, 39);
+  border-radius: 10px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+
+.libro {
+  align-self: center;
+  width: auto;
+  height: auto;
+  background-color: coral;
+  border-radius: 5%;
+  margin-right: 1%;
+  margin-left: 1%;
+  margin-bottom: 1%;
+  margin-top: 1%;
+}
+
+a {
+  color: black;
+}
+
