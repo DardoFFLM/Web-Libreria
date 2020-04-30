@@ -1,3 +1,9 @@
+/* Colores 
+navegacion  rgb(41, 39, 39)
+fondo       rgb(141, 141, 211)
+item        rgba(248, 126, 81, 0.884)
+*/
+
 .background {
   background-color: rgb(141, 141, 211);
   justify-content: center;
@@ -7,9 +13,8 @@
 .contenedor {
   display: flex;
   flex-wrap: wrap;
-  width: 40%;
+  width: 50%;
   height: 100%;
-  display: flex;
   margin: 5px auto;
 }
 
@@ -18,22 +23,32 @@
   padding: 5px;
   height: 300px;
   width: 165px;
-  background-color: coral;
+  background-color: rgba(248, 126, 81, 0.884);
   border-radius: 10px;
-  margin: 1% auto;
+  margin: 3% auto;
   overflow: hidden;
+}
+.bookcontainer:hover{
+  padding-left: 7px;
+  box-shadow: 3px 3px 3px 3px rgb(41, 39, 39);
+  height: 320px;
+  width: 185px;
 }
 
 .bookcontainer p,
 a {
+  margin-top: auto;
   text-decoration: none;
   text-align: center;
 }
 
 .bookcontainer img {
+  margin: 1%;
   width: 164px;
   height: 260px;
+  display: center;
 }
+
 
 .encabezado {
   width: 99%;
@@ -70,6 +85,11 @@ nav ul {
 nav li{
   margin: 10px;
 }
+nav li:hover{
+  position: auto;
+  color: rgba(248, 126, 81, 0.884);
+  font-weight: bolder;
+}
 
 footer {
   background-color: rgb(41, 39, 39);
@@ -77,6 +97,7 @@ footer {
   padding: 5px;
   display: flex;
   justify-content: center;
+  position: bottom;
 }
 
 
@@ -84,7 +105,7 @@ footer {
   align-self: center;
   width: auto;
   height: auto;
-  background-color: coral;
+  background-color: rgba(248, 126, 81, 0.884);
   border-radius: 5%;
   margin-right: 1%;
   margin-left: 1%;
@@ -96,3 +117,25 @@ a {
   color: black;
 }
 
+form{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    height: 25%;
+    width: 25% ;
+    background-color: rgb(41, 39, 39);
+    border-radius: 10px;
+    margin: 5% auto;
+    overflow: hidden;
+}
+form a{
+  color: rgb(3, 245, 225);
+}
+form a:hover{
+  font-weight: bolder;
+}
+form input:hover{
+  color: rgba(248, 126, 81, 0.884);
+  font-weight: bolder;
+}
