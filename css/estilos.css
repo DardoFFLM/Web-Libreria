@@ -168,16 +168,18 @@ p a {
 }
 
  td {
-   padding: 1%;
+   padding: 5px;
   border-bottom: solid 1px;
   text-align: center;
   border-color: rgb(141, 141, 211);
   overflow: hide;
  }
  td:hover{
+   padding: 5px;
    font-weight: bolder;
  }
  tr{
+   padding: 5px;
    justify-content: left;
  }
 .contenedortabla{
