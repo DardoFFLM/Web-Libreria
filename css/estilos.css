@@ -166,3 +166,10 @@ form input:hover{
 p a {
   font-weight: bolder;
 }
+
+table {
+  width: 300px;
+}
+ td {
+  border: solid 1px;
+  text-align: center;
