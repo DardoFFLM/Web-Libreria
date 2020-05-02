@@ -169,18 +169,20 @@ p a {
 
  td {
    padding: 5px;
-  border-bottom: solid 1px;
   text-align: center;
-  border-color: rgb(141, 141, 211);
-  overflow: hide;
+  overflow: hidden;
  }
  td:hover{
-   padding: 5px;
    font-weight: bolder;
+   overflow: hidden;
+ }
+ th{
+  overflow: hidden;
  }
  tr{
    padding: 5px;
    justify-content: left;
+   overflow : hidden;
  }
 .contenedortabla{
 
@@ -189,12 +191,19 @@ p a {
   width: 50%;
   height: 100%;
   margin: 5px auto;
-  background-color: rgb(41, 39, 39);
+  background-color: rgba(126, 52, 211, 0.822);
   border-radius: 10px;
   justify-content: center;
 }
+tr:nth-child(odd) {
+  background-color:rgb(80, 80, 139);
+}
+tr:nth-child(even) {
+  background-color:rgb(41, 39, 39);
+}
 
 table thead tr{
-  background-color:rgb(141, 141, 211);
+  padding-top: 5px;
+  background-color:rgb(41, 39, 39);
   border-radius: 15px;
 }
