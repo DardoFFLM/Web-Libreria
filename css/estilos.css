@@ -28,17 +28,17 @@ item        rgba(126, 52, 211, 0.822)
   width: 165px;
   background-color: rgba(126, 52, 211, 0.822);
   border-radius: 10px;
-  margin: 3% auto;
+  margin: 5px auto;
   overflow: hidden;
 }
-.bookcontainer:hover{
-  padding-left: 7px;
+.bookcontainer:hover {
   box-shadow: 3px 3px 3px 3px rgb(41, 39, 39);
-  height: 320px;
-  width: 185px;
+  height: 310px;
+  width: 180px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 0 auto;
 }
 
 .bookcontainer p,
