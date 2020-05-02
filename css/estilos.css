@@ -167,9 +167,31 @@ p a {
   font-weight: bolder;
 }
 
-table {
-  width: 300px;
-}
  td {
-  border: solid 1px;
+  border-bottom: solid 1px;
   text-align: center;
+  border-color: rgb(141, 141, 211);
+  overflow: hide;
+ }
+ td:hover{
+   font-weight: bolder;
+ }
+ tr{
+   justify-content: left;
+ }
+.contenedortabla{
+
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  height: 100%;
+  margin: 5px auto;
+  background-color: rgb(41, 39, 39);
+  border-radius: 10px;
+  justify-content: center;
+}
+
+table thead tr{
+  background-color:rgb(141, 141, 211);
+  border-radius: 15px;
+}
