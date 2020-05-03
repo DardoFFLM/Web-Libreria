@@ -168,35 +168,40 @@ p a {
 }
 
  td {
-   padding: 5px;
-  text-align: center;
+  margin: 3px;
+  padding: 10px;
+ }
+
+ thead th{
   overflow: hidden;
+  background-color: rgb(41, 39, 39);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
  }
- td:hover{
-   font-weight: bolder;
-   overflow: hidden;
- }
- td img:hover{
-   height:80%;
-   width: 80%;
- }
- th{
-  overflow: hidden;
- }
+
  tr{
    padding: 5px;
    justify-content: left;
-   overflow : hidden;
+
  }
+
 .contenedortabla{
-  display: flex;
-  flex-wrap: wrap;
-  width: 50%;
-  height: 100%;
+  table-layout: fixed;
+  width: 40%;
+  height: 80%;
   margin: 5px auto;
-  background-color: rgba(126, 52, 211, 0.822);
+  background-color: rgb(141, 141, 211);
   border-radius: 10px;
-  justify-content: center;
+}
+tfoot th{
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: rgb(41, 39, 39);
+}
+
+table thead tr{
+  padding-top: 5px;
+  border-radius: 15px;
 }
 tr:nth-child(odd) {
   background-color:rgb(65, 65, 117);
@@ -204,9 +209,13 @@ tr:nth-child(odd) {
 tr:nth-child(even) {
   background-color:rgb(41, 39, 39);
 }
-
-table thead tr{
-  padding-top: 5px;
-  background-color:rgb(41, 39, 39);
-  border-radius: 15px;
+tr:hover td{
+  cursor:pointer;
+  background-color: rgba(62, 30, 100, 0.822);
+}
+tr:first-child:hover td {
+  border-top: none;
+}
+tr:last-child:hover td {
+  border-bottom: none;
 }
