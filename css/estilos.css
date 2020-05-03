@@ -209,9 +209,13 @@ tr:nth-child(odd) {
 tr:nth-child(even) {
   background-color:rgb(41, 39, 39);
 }
-tr:hover td{
+tr:hover {
   cursor:pointer;
-  background-color: rgba(62, 30, 100, 0.822);
+  background-color: rgba(85, 61, 116, 0.822);
+}
+td:hover{
+  cursor:pointer;
+  background-color: rgba(59, 30, 97, 0.822);
 }
 tr:first-child:hover td {
   border-top: none;
