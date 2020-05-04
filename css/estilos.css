@@ -26,7 +26,7 @@ item        rgba(126, 52, 211, 0.822)
   padding: 5px;
   height: 300px;
   width: 165px;
-  background-color: rgba(126, 52, 211, 0.822);
+  background-color: rgba(85, 61, 116, 0.822);
   border-radius: 10px;
   margin: 5px auto;
   overflow: hidden;
@@ -123,7 +123,7 @@ footer {
   align-self: center;
   width: auto;
   height: auto;
-  background-color:rgba(126, 52, 211, 0.822);
+  background-color:rgba(85, 61, 116, 0.822) ;
   border-radius: 5%;
   margin-right: 1%;
   margin-left: 1%;
@@ -132,7 +132,7 @@ footer {
 }
 
 a {
-  color: black;
+  color: white;
 }
 .divform{
   height: 90%;
@@ -230,4 +230,69 @@ tr:first-child:hover td {
 }
 tr:last-child:hover td {
   border-bottom: none;
+}
+
+.libroindividual {
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+  align-self: center;
+  width: auto;
+  height: auto;
+  background-color: rgb(41, 39, 39);
+  border-radius: 10px;
+  margin: 5%;
+
+}
+
+.portada{
+  border-color: rgb(41, 39, 39);
+  border-style: double;
+  margin: 20px;
+  width: auto;
+  background-color:rgb(65, 65, 117) ;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.portada a{
+  justify-self: center;
+  border-color:  rgb(41, 39, 39) ;
+  border-style: double;
+}
+.portada a:hover{
+
+  background-color: rgba(59, 30, 97, 0.822);
+}
+.contenido{
+  width: 30%;
+  height: 100%;
+  padding: 5px;
+ 
+  border-radius: 10px;
+}
+.sinopsis{
+  border-color:rgb(41, 39, 39) ;
+  border-style: double;
+  margin: 20px;
+  background-color:rgb(65, 65, 117);
+  width: 40% ;
+  height: 30%;
+  padding: 10px;
+  border-radius: 10px;
+
+}
+.titulo{
+  background-color:rgb(65, 65, 117) ;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 2px;
+  width: 20%;
+  height: 100%;
+  border-style: double;
+  border-color: rgb(41, 39, 39);
+}
+ul{
+  list-style:square ;
 }
