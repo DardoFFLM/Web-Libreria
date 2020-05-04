@@ -99,6 +99,8 @@ a {
 
 .encabezado h1 {
   font-family: 'Righteous', cursive;
+  text-shadow:3px 3px 4px rgb(141, 141, 211) ;
+
 }
 
 .logo img {
