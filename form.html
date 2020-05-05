@@ -44,16 +44,16 @@
             <label for="repass">Repetir contraseña:</label>
             <input type="password" name="repass" id="repass" />
             <div>
-                <input type="checkbox" name="terms" />He leido y acepto los
+                <input type="checkbox" name="terms" id="terms" />He leido y acepto los
                 <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Terminos y Condiciones.</a>
             </div>
             <div class="captchaContainer">
                 <p>Copie el texto que aparece a continuacion:</p>
-                <p class="captcha">CAPTCHA</p>
+                <p class="captcha">captcha</p>
             </div>
             <input type="text" name="captchaRes" id="captchaRes">
-            <p class="alerta">Error: verifique sus datos y el captcha</p>
-            <input type="submit" name="send" />
+            <p class="alerta-oculta">Error: verifique los datos ingresados y el captcha</p>
+            <input type="button" name="send" class="submit" value="Enviar"/>
 
         </form>
     </div>
@@ -62,6 +62,7 @@
             Grupo 126 - Trabajo especial WEB-1 - UNICEN - año 2020
         </p>
     </footer>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>

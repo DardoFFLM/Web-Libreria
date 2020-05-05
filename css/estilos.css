@@ -171,6 +171,17 @@ form label {
 form input:hover{
   font-weight: bolder;
 }
+
+.alerta-oculta {
+  color: red;
+  font-weight: bolder;
+  display: none;
+}
+
+.alerta-visible {
+  display: block;
+}
+
 p a {
   font-weight: bolder;
 }
