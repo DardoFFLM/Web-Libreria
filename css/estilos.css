@@ -58,6 +58,9 @@ a {
 }
 
 .imgnav {
+  border: solid;
+  border-color: rgb(120, 89, 179);
+  align-self: center;
   padding: 5px;
   margin-top: 10px;
   list-style: none;
@@ -100,6 +103,7 @@ a {
 .encabezado h1 {
   font-family: 'Righteous', cursive;
   text-shadow:3px 3px 4px rgb(141, 141, 211) ;
+  align-self: center;
 
 }
 
@@ -191,7 +195,7 @@ form select {
 .captcha {
   font-weight: bolder;
   font-size: 20px;
-  background: rgb(94, 94, 255);
+  background: rgb(100, 57, 124);
   color: white;
   border-radius: 2px;
   text-align: center;
@@ -321,4 +325,24 @@ tr:last-child:hover td {
 }
 ul{
   list-style:square ;
+}
+.busqueda{
+  height: 25%;
+  align-self: center;
+  padding: 4px;
+  border: solid rgb(120, 89, 179);
+  margin-top: 8px;
+  margin-right: 8px;
+  font-size: 17px;
+  border-radius: 5px;
+  background-color: rgb(141, 141, 211)
+  ;
+  
+}
+.busqueda:hover{
+  background-color: rgb(205, 167, 241);
+}
+
+::placeholder{
+  color: rgb(0, 0, 0);
 }
