@@ -1,6 +1,18 @@
 "use strict";
 let enviar = document.querySelector(".submit");
+let randomCaptcha = generarCaptcha(6);
+let captcha = document.querySelector(".captcha");
+captcha.innerHTML = randomCaptcha;
 enviar.addEventListener("click", mostrar);
+
+function generarCaptcha(largo) {
+    let texto = "";
+    let caracteres = "qwertyuioplkjhgfdsazxcvbnm123456789"
+    for (let index = 0; index < texto.length; index++) {
+        texto += caracteres.charAt(Math.floor(Math.random() * caracteres.length));
+    }
+    return texto;
+}
 
 function mostrar() {
     let terms = document.querySelector("#terms").checked;
