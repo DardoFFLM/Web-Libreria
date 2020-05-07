@@ -144,7 +144,7 @@ a {
   background-color: rgb(41, 39, 39);
   border-radius: 10px;
   margin: 10px auto;
-  box-shadow: 3px 3px 3px 3px rgb(41, 39, 39);
+  box-shadow: 3px 3px 3px 3px rgba(85, 61, 116, 0.822) ;
 }
 form{
     flex-wrap: wrap;
