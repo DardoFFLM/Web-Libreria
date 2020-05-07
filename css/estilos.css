@@ -276,8 +276,8 @@ tr:last-child:hover td {
 }
 
 .portada{
-  border-color: rgb(41, 39, 39);
-  border-style: double;
+  border-color: rgb(120, 89, 179);
+  border-style: solid;
   margin: 20px;
   width: auto;
   background-color:rgb(65, 65, 117) ;
@@ -288,8 +288,8 @@ tr:last-child:hover td {
 }
 .portada a{
   justify-self: center;
-  border-color:  rgb(41, 39, 39) ;
-  border-style: double;
+  border-color:  rgb(120, 89, 179);
+  border-style: solid;
 }
 .portada a:hover{
 
@@ -303,8 +303,8 @@ tr:last-child:hover td {
   border-radius: 10px;
 }
 .sinopsis{
-  border-color:rgb(41, 39, 39) ;
-  border-style: double;
+  border-color:rgb(120, 89, 179);
+  border-style: solid;
   margin: 20px;
   background-color:rgb(65, 65, 117);
   width: 40% ;
@@ -320,8 +320,8 @@ tr:last-child:hover td {
   padding: 2px;
   width: 20%;
   height: 100%;
-  border-style: double;
-  border-color: rgb(41, 39, 39);
+  border-style:solid;
+  border-color: rgb(120, 89, 179);
 }
 ul{
   list-style:square ;
@@ -344,5 +344,6 @@ ul{
 }
 
 ::placeholder{
-  color: rgb(0, 0, 0);
+  color: rgb(95, 0, 150);
+  font-weight: bolder;
 }
