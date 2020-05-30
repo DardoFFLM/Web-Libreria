@@ -7,6 +7,9 @@ item        rgba(126, 52, 211, 0.822)
 
 .background {
   background-color: rgb(141, 141, 211);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   color: aliceblue;
 
@@ -222,14 +225,7 @@ p a {
 
  }
 
-.contenedortabla{
-  table-layout: fixed;
-  width: 40%;
-  height: 80%;
-  margin: 5px auto;
-  background-color: rgb(141, 141, 211);
-  border-radius: 10px;
-}
+
 tfoot th{
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -237,6 +233,7 @@ tfoot th{
 }
 
 table thead tr{
+  width: 100%;
   padding-top: 5px;
   border-radius: 15px;
 }
@@ -259,6 +256,26 @@ tr:first-child:hover td {
 }
 tr:last-child:hover td {
   border-bottom: none;
+}
+
+.tabForm{
+  width: 96%;
+  margin: 1% auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.CatalogoTab{
+  width: 99%;
+  margin: 1% auto;
+  
+}
+
+.bodyContent{
+  margin: 0 auto;
+  width: 60%;
+  border: solid black 2px;
 }
 
 .libroindividual {
