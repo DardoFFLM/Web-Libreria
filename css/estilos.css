@@ -263,6 +263,7 @@ tr:last-child:hover td {
   margin: 1% auto;
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .tabBtn{
