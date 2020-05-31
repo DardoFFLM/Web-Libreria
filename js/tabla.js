@@ -1,5 +1,5 @@
 "use strict";
-/*creo datos y retorno la estructura*/
+/*creo datos y retorno el arreglo que los almacena*/
 function generarDatos() {
     let libros = [{
             "titulo": "Bullying y abuso infantil",
@@ -8,7 +8,7 @@ function generarDatos() {
         },
         {
             "titulo": "Marinka una rusa niña vasca",
-            "autor": "TRodolfo Luna Almeida",
+            "autor": "Rodolfo Luna Almeida",
             "año": 2019
         },
         {
@@ -30,11 +30,15 @@ function generarDatos() {
     return libros;
 }
 
-function cargarTabla() {
-     for(let i = 0; i < tabla.length; i++){
+function cargarTabla() {/**genera toda la tabla a partir del arreglo */
+    for (let i = 0; i < tabla.length; i++) {
         let elementoFila = document.createElement('tr');
         let elementoColumna1 = document.createElement('td');
-        elementoColumna1.innerHTML = tabla[i].titulo;
+        let a = document.createElement('a');
+        let texto = document.createTextNode(tabla[i].titulo);
+        a.appendChild(texto);
+        a.href = "libro.html";
+        elementoColumna1.appendChild(a);
         let elementoColumna2 = document.createElement('td');
         elementoColumna2.innerHTML = tabla[i].autor;
         let elementoColumna3 = document.createElement('td');
@@ -42,7 +46,7 @@ function cargarTabla() {
         let elementoColumna4 = document.createElement('td');
         let imagen = document.createElement('img')
         imagen.setAttribute('src', "images/download.png");
-        imagen.src="images/download.png"
+        imagen.setAttribute('alt', "descarga");
         elementoColumna4.appendChild(imagen);
         elementoFila.appendChild(elementoColumna1);
         elementoFila.appendChild(elementoColumna2);
