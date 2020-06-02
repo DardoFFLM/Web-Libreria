@@ -4,17 +4,102 @@ fondo       rgb(141, 141, 211)
 item        rgba(126, 52, 211, 0.822)
 */
 
-
 .background {
   background-color: rgb(141, 141, 211);
+  width: 95%;
+  height: 95%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   color: aliceblue;
+  padding: 2%;
 
 }
+/*-------------------------HEADER-------------------------*/
+.encabezado {
+  width: 100%;
+  height: 15%;
+  background-color: rgb(41, 39, 39);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  box-shadow: 3px 3px 3px 3px rgb(41, 39, 39);
+}
 
+.logo{
+  width: 10%;
+  height: 10%;
+}
+
+.logo img {
+  background-color: inherit;
+  width: 100%;
+  height: 100%;
+}
+
+.encabezado h1 {
+  width: 45%;
+  height: 20%;
+  font-family: 'Righteous', cursive;
+  text-shadow:3px 3px 4px rgb(141, 141, 211) ;
+  align-self: center;
+}
+
+.busqueda{
+  width: 10%;
+  align-self: center;
+  padding: 4px;
+  border: solid rgb(120, 89, 179);
+  margin-top: 8px;
+  margin-right: 8px;
+  font-size: 17px;
+  border-radius: 5px;
+  background-color: rgb(141, 141, 211); 
+}
+
+.busqueda:hover{
+  background-color: rgb(205, 167, 241);
+}
+
+::placeholder{
+  color: rgb(95, 0, 150);
+  font-weight: bolder;
+}
+
+.imgnav {
+  width: 15%;
+  height: 100%;
+  border: solid rgb(120, 89, 179);
+  align-self: center;
+  padding: 5px;
+  margin-top: 10px;
+  list-style: none;
+  background-color: rgb(141, 141, 211);
+  border-radius: 10px;
+  color: rgb(17, 17, 17);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+}
+
+.RecuadroNav{
+  width: 25%;
+}
+
+.RecuadroNav img {
+  width: 75%;
+  height: 75%;
+  padding: 10%;
+}
+.RecuadroNav img:hover {
+  width: 90%;
+  height: 90%;
+  margin: 0 auto;
+  padding: 0;
+}
 
 .contenedor {
   display: flex;
@@ -58,62 +143,6 @@ a {
   width: 164px;
   height: 260px;
   display: center;
-}
-
-.imgnav {
-  border: solid;
-  border-color: rgb(120, 89, 179);
-  align-self: center;
-  padding: 5px;
-  margin-top: 10px;
-  list-style: none;
-  background-color: rgb(141, 141, 211);
-  border-radius: 10px;
-  color: rgb(17, 17, 17);
-  width: 250px;
-  height: 74px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-content: center;
-}
-
-
-.imgnav img {
-  width: 50px;
-  height: 50px;
-}
-.imgnav img:hover {
-  width: 60px;
-  height: 60px;
-  margin: 0 auto;
-}
-
-.encabezado {
-  
-  height: 132px;
-  padding: 5px;
-  position: sticky;
-  background-color: rgb(41, 39, 39);
-  border-radius: 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  box-shadow: 3px 3px 3px 3px rgb(41, 39, 39);
-}
-
-.encabezado h1 {
-  font-family: 'Righteous', cursive;
-  text-shadow:3px 3px 4px rgb(141, 141, 211) ;
-  align-self: center;
-
-}
-
-.logo img {
-  background-color: inherit;
-  width: 150px;
-  height: 150px;
 }
 
 footer {
@@ -346,24 +375,4 @@ tr:last-child:hover td {
 ul{
   list-style:square ;
 }
-.busqueda{
-  height: 25%;
-  align-self: center;
-  padding: 4px;
-  border: solid rgb(120, 89, 179);
-  margin-top: 8px;
-  margin-right: 8px;
-  font-size: 17px;
-  border-radius: 5px;
-  background-color: rgb(141, 141, 211)
-  ;
-  
-}
-.busqueda:hover{
-  background-color: rgb(205, 167, 241);
-}
 
-::placeholder{
-  color: rgb(95, 0, 150);
-  font-weight: bolder;
-}
