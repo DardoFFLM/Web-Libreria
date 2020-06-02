@@ -267,7 +267,11 @@ tr:last-child:hover td {
   margin: 1% auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
+}
+
+.tabBtn{
+  width: 10%;
 }
 
 .CatalogoTab{
