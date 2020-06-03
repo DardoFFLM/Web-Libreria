@@ -251,7 +251,7 @@ a {
   flex-direction: column;
   background-color: rgb(41, 39, 39);
   border-radius: 10px;
-  margin: 10% auto;
+  margin: 10px auto;
   box-shadow: 3px 3px 3px 3px rgba(85, 61, 116, 0.822) ;
   
 }
@@ -268,10 +268,6 @@ form{
 }
 form a{
   color: rgb(106, 233, 226);
-}
-
-.formimput{
-  width: min-content;
 }
 
 form input {
