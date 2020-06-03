@@ -244,11 +244,7 @@ a {
 }
 .divform{
   height: 90%;
-<<<<<<< HEAD
-  width: auto;
-=======
   width: 50%;
->>>>>>> ResponsiveJuan
   display: flex;
   flex-direction: column;
   background-color: rgb(41, 39, 39);
