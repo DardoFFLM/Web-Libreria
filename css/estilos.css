@@ -374,3 +374,16 @@ ul{
   list-style:square ;
 }
 
+@media (max-width: 600px) {
+    .encabezado{
+      display: none;
+    }
+    .EncabezadoMenu{
+      display: flex;
+      flex-direction: column;
+    }
+    .BotoneraOculta{
+      display: flex;
+      flex-direction: column;
+    }
+  }
