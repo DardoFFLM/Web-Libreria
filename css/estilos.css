@@ -12,6 +12,7 @@ item        rgba(126, 52, 211, 0.822)
   padding: 2%;
 
 }
+
 /*-------------------------HEADER-------------------------*/
 .encabezado {
   width: 100%;
@@ -24,7 +25,7 @@ item        rgba(126, 52, 211, 0.822)
   justify-content: space-evenly;
 }
 
-.logo{
+.logo {
   width: 10%;
   height: 90%;
 }
@@ -44,10 +45,10 @@ item        rgba(126, 52, 211, 0.822)
 .encabezado p {
   font-size: 25px;
   font-family: 'Righteous', cursive;
-  text-shadow:3px 3px 4px rgb(141, 141, 211) ;
+  text-shadow: 3px 3px 4px rgb(141, 141, 211);
 }
 
-.busqueda{
+.busqueda {
   width: 10%;
   height: 50%;
   margin: 3%;
@@ -55,14 +56,14 @@ item        rgba(126, 52, 211, 0.822)
   border: solid rgb(120, 89, 179);
   font-size: 17px;
   border-radius: 5px;
-  background-color: rgb(141, 141, 211); 
+  background-color: rgb(141, 141, 211);
 }
 
-.busqueda:hover{
+.busqueda:hover {
   background-color: rgb(205, 167, 241);
 }
 
-::placeholder{
+::placeholder {
   color: rgb(95, 0, 150);
   font-weight: bolder;
 }
@@ -81,7 +82,7 @@ item        rgba(126, 52, 211, 0.822)
   justify-content: space-evenly;
 }
 
-.RecuadroNav{
+.RecuadroNav {
   width: 25%;
 }
 
@@ -90,6 +91,7 @@ item        rgba(126, 52, 211, 0.822)
   height: 75%;
   padding: 10%;
 }
+
 .RecuadroNav img:hover {
   width: 90%;
   height: 90%;
@@ -98,63 +100,69 @@ item        rgba(126, 52, 211, 0.822)
 }
 
 /*-------------TABLA----------------*/
-.CatalogoTab{
+.CatalogoTab {
   width: 99%;
   margin: 1% auto;
-  
+
 }
 
 td {
   padding: 5px;
- }
+}
 
- thead th{
+thead th {
   overflow: hidden;
   background-color: rgb(41, 39, 39);
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
- }
+}
 
- tr{
-   padding: 5px;
-   justify-content: left;
+tr {
+  padding: 5px;
+  justify-content: left;
 
- }
+}
 
 
-tfoot th{
+tfoot th {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   background-color: rgb(41, 39, 39);
 }
 
-table thead tr{
+table thead tr {
   width: 100%;
   padding-top: 5px;
   border-radius: 15px;
 }
+
 tr:nth-child(odd) {
-  background-color:rgb(65, 65, 117);
+  background-color: rgb(65, 65, 117);
 }
+
 tr:nth-child(even) {
-  background-color:rgb(41, 39, 39);
+  background-color: rgb(41, 39, 39);
 }
+
 tr:hover {
-  cursor:pointer;
+  cursor: pointer;
   background-color: rgba(85, 61, 116, 0.822);
 }
-td:hover{
-  cursor:pointer;
+
+td:hover {
+  cursor: pointer;
   background-color: rgba(59, 30, 97, 0.822);
 }
+
 tr:first-child:hover td {
   border-top: none;
 }
+
 tr:last-child:hover td {
   border-bottom: none;
 }
 
-.tabForm{
+.tabForm {
   width: 99%;
   height: 5%;
   margin: 1% auto;
@@ -163,11 +171,11 @@ tr:last-child:hover td {
   justify-content: space-between;
 }
 
-.InputTabla{
+.InputTabla {
   width: 15%;
 }
 
-.tabBtn{
+.tabBtn {
   width: 15%;
 }
 
@@ -189,6 +197,7 @@ tr:last-child:hover td {
   margin: 5px auto;
   overflow: hidden;
 }
+
 .bookcontainer:hover {
   box-shadow: 3px 3px 3px 3px rgb(41, 39, 39);
   height: 310px;
@@ -231,7 +240,7 @@ footer {
   align-self: center;
   width: auto;
   height: auto;
-  background-color:rgba(85, 61, 116, 0.822) ;
+  background-color: rgba(85, 61, 116, 0.822);
   border-radius: 5%;
   margin-right: 1%;
   margin-left: 1%;
@@ -244,7 +253,7 @@ a {
 }
 
 /*-----------FORMULARIO-----------------*/
-.divform{
+.divform {
   height: 90%;
   width: 50%;
   display: flex;
@@ -252,21 +261,23 @@ a {
   background-color: rgb(41, 39, 39);
   border-radius: 10px;
   margin: 10px auto;
-  box-shadow: 3px 3px 3px 3px rgba(85, 61, 116, 0.822) ;
-  
+  box-shadow: 3px 3px 3px 3px rgba(85, 61, 116, 0.822);
+
 }
-form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 5px;
-    height: 25%;
-    width: 100%;
-    background-color: rgb(41, 39, 39);
-    border-radius: 10px;
-    box-shadow: 3px 3px 3px 3px rgb(41, 39, 39);
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px;
+  height: 25%;
+  width: 100%;
+  background-color: rgb(41, 39, 39);
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px 3px rgb(41, 39, 39);
 }
-form a{
+
+form a {
   color: rgb(106, 233, 226);
 }
 
@@ -278,7 +289,7 @@ form label {
   margin: 5px;
 }
 
-form input:hover{
+form input:hover {
   font-weight: bolder;
 }
 
@@ -322,68 +333,106 @@ p a {
 
 }
 
-.portada{
+.portada {
   border-color: rgb(120, 89, 179);
   border-style: solid;
   margin: 20px;
   width: auto;
-  background-color:rgb(65, 65, 117) ;
+  background-color: rgb(65, 65, 117);
   border-radius: 10px;
   padding: 10px;
   display: flex;
   flex-direction: column;
 }
-.portada a{
+
+.portada a {
   justify-self: center;
-  border-color:  rgb(120, 89, 179);
+  border-color: rgb(120, 89, 179);
   border-style: solid;
 }
-.portada a:hover{
+
+.portada a:hover {
 
   background-color: rgba(59, 30, 97, 0.822);
 }
-.contenido{
+
+.contenido {
   width: 30%;
   height: 100%;
   padding: 5px;
- 
+
   border-radius: 10px;
 }
-.sinopsis{
-  border-color:rgb(120, 89, 179);
+
+.sinopsis {
+  border-color: rgb(120, 89, 179);
   border-style: solid;
   margin: 20px;
-  background-color:rgb(65, 65, 117);
-  width: 40% ;
+  background-color: rgb(65, 65, 117);
+  width: 40%;
   height: 30%;
   padding: 10px;
   border-radius: 10px;
 
 }
-.titulo{
-  background-color:rgb(65, 65, 117) ;
+
+.titulo {
+  background-color: rgb(65, 65, 117);
   border-radius: 10px;
   margin: 20px;
   padding: 2px;
   width: 20%;
   height: 100%;
-  border-style:solid;
+  border-style: solid;
   border-color: rgb(120, 89, 179);
 }
-ul{
-  list-style:square ;
+
+ul {
+  list-style: square;
 }
 
-@media (max-width: 600px) {
-    .encabezado{
-      display: none;
-    }
-    .EncabezadoMenu{
-      display: flex;
-      flex-direction: column;
-    }
-    .BotoneraOculta{
-      display: flex;
-      flex-direction: column;
-    }
+
+@media (max-width: 768px) {
+  .encabezado{
+    display: none;
   }
+  #btn-menu{
+    display: none;
+  }
+  .menu-label{
+    width: 20%;
+    height: 20%;
+  }
+  .menu-label img{
+    width: 100%;
+    height: 100%;
+  }
+  .menu{
+    position: absolute;
+    width: 20%;
+    margin-left: -70%;
+    
+  }
+  header label {
+    display: block;
+  }
+
+  .menu ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    flex-direction: column;
+  }
+
+
+  .menu li img {
+    width: 100%;
+    height: 100%;
+
+  }
+
+  #btn-menu:checked~.menu {
+    margin: 0;
+  }
+
+}
