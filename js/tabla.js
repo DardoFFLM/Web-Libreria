@@ -76,7 +76,7 @@ function cargarTabla() {
         let unLibro = {
             "titulo": tabla[i].titulo,
             "autor": tabla[i].titulo,
-            "año": tabla[i].year
+            "año": tabla[i].año
         }
         actualizarTabla(unLibro);
     };
