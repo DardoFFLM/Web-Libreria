@@ -15,8 +15,8 @@ item        rgba(126, 52, 211, 0.822)
 
 /*-------------------------HEADER-------------------------*/
 .encabezado {
-  width: 100%;
-  height: 10%;
+
+  height: 13%;
   background-color: rgb(41, 39, 39);
   border-radius: 10px;
   display: flex;
@@ -38,8 +38,8 @@ item        rgba(126, 52, 211, 0.822)
 .logo img {
   background-color: inherit;
   width: 90%;
-  height: 90%;
-  margin: auto;
+  height: 130%;
+  margin: 0;
 }
 
 .encabezado p {
@@ -101,7 +101,8 @@ item        rgba(126, 52, 211, 0.822)
 
 /*-------------TABLA----------------*/
 .CatalogoTab {
-  width: 99%;
+  height: 80%;
+  width: 80%;
   margin: 1% auto;
 
 }
@@ -390,47 +391,71 @@ p a {
 ul {
   list-style: square;
 }
-#btn-menu{
+
+#btn-menu {
   display: none;
 }
-.menu-label{
+
+.menu-label {
   display: none;
 }
-.menu{
+
+.menu {
+  display: none;
+}
+
+.menu-responsive {
   display: none;
 }
 
 @media (max-width: 768px) {
-  .encabezado{
+  .menu-responsive {
+    background-color: rgb(41, 39, 39);
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 3px rgb(41, 39, 39);
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 25px;
+    font-family: 'Righteous', cursive;
+    text-shadow: 3px 3px 4px rgb(141, 141, 211);
+    padding: 1%;
+  }
+
+  .encabezado {
     display: none;
   }
-  #btn-menu{
+
+  #btn-menu {
     display: none;
   }
-  .menu-label{
+
+  .menu-label {
     display: flex;
     width: 22%;
     height: 20%;
+    display: inline-block;
   }
-  .menu-label img{
+
+  .menu-label img {
     width: 100%;
     height: 100%;
-    background: rgb(100, 57, 124) ;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    background: rgb(100, 57, 124);
+    justify-self: right;
     border: solid rgb(41, 39, 39);
   }
-  .menu{
+
+  .menu {
     display: flex;
     position: absolute;
     width: 20%;
     margin-left: -70%;
-    background: rgb(100, 57, 124) ;
+    background: rgb(100, 57, 124);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     border: solid rgb(41, 39, 39);
-    
+
   }
+
   header label {
     display: block;
   }
