@@ -390,7 +390,15 @@ p a {
 ul {
   list-style: square;
 }
-
+#btn-menu{
+  display: none;
+}
+.menu-label{
+  display: none;
+}
+.menu{
+  display: none;
+}
 
 @media (max-width: 768px) {
   .encabezado{
@@ -400,17 +408,27 @@ ul {
     display: none;
   }
   .menu-label{
-    width: 20%;
+    display: flex;
+    width: 22%;
     height: 20%;
   }
   .menu-label img{
     width: 100%;
     height: 100%;
+    background: rgb(100, 57, 124) ;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: solid rgb(41, 39, 39);
   }
   .menu{
+    display: flex;
     position: absolute;
     width: 20%;
     margin-left: -70%;
+    background: rgb(100, 57, 124) ;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: solid rgb(41, 39, 39);
     
   }
   header label {
