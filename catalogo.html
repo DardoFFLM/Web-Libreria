@@ -1,76 +1,71 @@
 <!DOCTYPE html5>
 <html lang="en">
- <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/logo.png" />
     <title>LiWeb</title>
     <link rel="stylesheet" href="css/estilos.css">
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
- </head>
+</head>
+
 <body class="background">
-    <header>
+    <header class="encabezado">
         <input type="checkbox" id="btn-menu">
         <label class="menu-label" for="btn-menu"> <img src="images/menu.png" alt=""></label>
-
-        <nav class="menu">
-           <ul>
-               <li><a href="index.html"><img src="images/home.png" alt="home"></a></li>
-               <li><a href="catalogo.html"><img src="images/catalogo.png" alt="catalogo"></a></li>
-               <li><a href="form.html"><img src="images/sesion.png" alt="registro"></a></li>
-           </ul>
+        <figure class="logo">
+            <a href="index.html" class="LinkLogo"><img src="images/logo.png" alt="Logo"></a>
+        </figure>
+        <nav class="imgnav">
+            <div class="RecuadroNav"><a href="index.html" class="ImgLink"><img src="images/home.png" alt="home"></a>
+            </div>
+            <div class="RecuadroNav"><a href="catalogo.html" class="ImgLink"><img src="images/catalogo.png"
+                        alt="catalogo"></a></div>
+            <div class="RecuadroNav"><a href="form.html" class="ImgLink"><img src="images/sesion.png"
+                        alt="registro"></a></div>
         </nav>
-
-    </header>
-    <header class="encabezado">
-        <div class="logo">
-            <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
-        </div>  
         <p>LIWEB: LLeva tus libros a donde vayas!</p>
         <input type="text" placeholder="Busqueda..." class="busqueda"></input>
-        <nav class="imgnav">
-            <div class="RecuadroNav"><a href="index.html"><img src="images/home.png" alt="home"></a></div>
-            <div class="RecuadroNav"><a href="catalogo.html"><img src="images/catalogo.png" alt="catalogo"></a></div>
-            <div class="RecuadroNav"><a href="form.html"><img src="images/sesion.png" alt="registro"></a></div>
-        </nav>
     </header>
-            <table class="CatalogoTab">
-                <thead>
-                    <tr>
-                        <th>Titulo</th>
-                        <th>Autor</th>
-                        <th>Año</th>
-                        <th>Link</th>
-                    </tr>
-                </thead>
-                <tbody class="cuerpoTab">
+    <table class="CatalogoTab">
+        <thead>
+            <tr>
+                <th>Titulo</th>
+                <th>Autor</th>
+                <th>Año</th>
+                <th>Link</th>
+            </tr>
+        </thead>
+        <tbody class="cuerpoTab">
 
-                </tbody>
-                 <tfoot>
-                     <tr>
-                        <th>Titulo</th>
-                        <th>Autor</th>
-                        <th>Año</th>
-                        <th>Link</th>
-                     </tr>
-                </tfoot>
-            </table>
-            <form class="tabForm">
-                <input type="text" id="booktitle" class="InputTabla">
-                <input type="text" id="bookAutor" class="InputTabla">
-                <input type="text" id="bookYear" class="InputTabla">
-                <input type="button" class="tabBtn" id="agrega" value="Agregar Libro"></input>
-                <input type="button" class="tabBtn" id="genera" value="Generar Libros"></input>
-                <input type="button" class="tabBtn" id="borra" value="Borrar Tabla"></input>
-            </form>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Titulo</th>
+                <th>Autor</th>
+                <th>Año</th>
+                <th>Link</th>
+            </tr>
+        </tfoot>
+    </table>
+    <form class="tabForm">
+        <input type="text" id="booktitle" class="InputTabla">
+        <input type="text" id="bookAutor" class="InputTabla">
+        <input type="text" id="bookYear" class="InputTabla">
+        <input type="button" class="tabBtn" id="agrega" value="Agregar Libro"></input>
+        <input type="button" class="tabBtn" id="genera" value="Generar Libros"></input>
+        <input type="button" class="tabBtn" id="borra" value="Borrar Tabla"></input>
+    </form>
     </div>
-    
-    
-    <footer> 
+
+
+    <footer>
         <p>
-           Grupo 126  -   Trabajo especial WEB-1  -  UNICEN  -  año 2020
+            Grupo 126 - Trabajo especial WEB-1 - UNICEN - año 2020
         </p>
     </footer>
     <script type="text/javascript" src="js/tabla.js"></script>
 </body>
+
 </html>
