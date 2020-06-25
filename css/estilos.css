@@ -119,6 +119,7 @@ item        rgba(126, 52, 211, 0.822)
 }
 
 /*-------------TABLA----------------*/
+
 .CatalogoTab {
   height: 60%;
   width: 80%;
@@ -197,6 +198,10 @@ tr:last-child:hover td {
 
 .tabBtn {
   width: 15%;
+}
+
+.filaResaltada{
+  color: rgb(255, 0, 0);
 }
 
 .contenedor {
@@ -408,7 +413,7 @@ ul {
 
 
 @media (min-width: 768px) {
-  .RecuadroNav {
+  cuadroNav {
     width: 100%;
     height: 80%;
     margin-top: 1%;
