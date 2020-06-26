@@ -1,5 +1,42 @@
 "use strict";
 
+function coincide(columnas, textoBuscado) {//Revisa si alguna de las columnas de la fila  coincide con el texto buscado.
+    let respuesta = false;
+   if (columnas[0].querySelector('a').innerHTML === textoBuscado) {//Hicimos esto porque el texto de la primer columna esta contenido dentro de un <a>.
+        respuesta = true;
+    }
+    for(let c = 1; c < columnas.length-1; c++){
+        let aux = columnas[c].innerHTML;
+        if (aux === textoBuscado) {
+            respuesta = true;
+            console.log("lo encontre!");
+        }
+        else
+        columnas[c].classList.toggle("filaOculta");
+    }
+    return respuesta;
+}
+
+function filtrar(textoBuscado) {//Obtiene todas las filas de la tabla, llama a "coincide" para ver si filtrarlas o no.
+let filas = document.querySelectorAll(".fila");
+    for(let i = 0; i < filas.length; i++){
+        let columnas = filas[i].querySelectorAll(".columna");
+        if (!coincide(columnas, textoBuscado)) {
+            filas[i].classList.toggle("celdaOculta");
+            for(let c = 0; c < columnas.length; c++){
+                columnas[c].classList.toggle("celdaOculta");
+            }
+        }
+                
+            }
+        }
+
+function buscarLibros() {
+    let textoBuscado  = document.querySelector(".busqueda").value;
+    filtrar(textoBuscado);
+}
+
+
 function borrarTabla() {//Borra los elementos del arreglo y el tbody de la tabla para reemplazarlo por un nuevo tbody vacio.
     let table = document.querySelector(".CatalogoTab");
     let tbody = document.querySelector(".cuerpoTab");
@@ -26,30 +63,33 @@ function generarLibros() {//Genera elementos para agregar a la tabla. En este ca
 
 function actualizarTabla(unLibro) {//Crea una nueva fila, carga sus celdas con los datos del libro y luego la añade al HTML.
     let elementoFila = document.createElement('tr');
-   
+    elementoFila.classList.toggle("fila");
     let elementoColumna1 = document.createElement('td');
     let a = document.createElement('a');
     let texto = document.createTextNode(unLibro.titulo);
     a.appendChild(texto);
     a.href = "libro.html";
     elementoColumna1.appendChild(a);
+    elementoColumna1.classList.toggle("columna");
     let elementoColumna2 = document.createElement('td');
     elementoColumna2.innerHTML = unLibro.autor;
+    elementoColumna2.classList.toggle("columna");
     let elementoColumna3 = document.createElement('td');
     elementoColumna3.innerHTML = unLibro.año;
-    if(unLibro.año === "2020"){
-        elementoColumna3.classList.toggle("filaResaltada");
+    if (unLibro.año === "2020") {
+        elementoColumna3.classList.toggle("añoResaltado");
     }
+    elementoColumna3.classList.toggle("columna");
     let elementoColumna4 = document.createElement('td');
     let imagen = document.createElement('img')
     imagen.setAttribute('src', "images/download.png");
     imagen.setAttribute('alt', "descarga");
     elementoColumna4.appendChild(imagen);
+    elementoColumna4.classList.toggle("columna");
     elementoFila.appendChild(elementoColumna1);
     elementoFila.appendChild(elementoColumna2);
     elementoFila.appendChild(elementoColumna3);
     elementoFila.appendChild(elementoColumna4);
-
     document.querySelector(".cuerpoTab").appendChild(elementoFila);
 }
 
@@ -117,6 +157,8 @@ function generarDatos() {
     return libros;
 }
 
+let buscar = document.querySelector("#filtrar");
+buscar.addEventListener("click", buscarLibros);
 let tabla = generarDatos(); //uso la funcion para cargar mi variable tabla.
 //agrego eventListener a los botones.
 let btnAgregar = document.querySelector("#agrega");
