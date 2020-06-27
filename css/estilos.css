@@ -361,7 +361,9 @@ p a {
   height: auto;
   background-color: rgb(41, 39, 39);
   border-radius: 10px;
-  margin: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: auto;
 }
 
 .portada {
