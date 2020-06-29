@@ -200,8 +200,14 @@ tr:last-child:hover td {
 
 .InputTabla {
   width: 15%;
+  border: solid rgb(120, 89, 179);
+  font-size: 13px;
+  border-radius: 5px;
+  background-color: rgb(141, 141, 211)
 }
-
+.InputTabla:hover{
+  background-color: rgb(205, 167, 241);
+}
 .tabBtn {
   width: 15%;
 }
