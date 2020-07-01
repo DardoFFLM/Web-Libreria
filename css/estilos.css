@@ -12,6 +12,15 @@ item        rgba(126, 52, 211, 0.822)
   padding: 2%;
 
 }
+button{
+ 
+  border-radius: 10px;
+  background-color: rgb(120, 89, 179);
+  border: solid rgb(141, 141, 211);
+}
+button:hover{
+  background-color:rgb(194, 145, 216);
+}
 
 /*-------------------------HEADER-------------------------*/
 .encabezado {
@@ -50,6 +59,9 @@ item        rgba(126, 52, 211, 0.822)
   box-shadow: 3px 3px 3px 3px rgb(41, 39, 39);
   }
 
+.menu-label:hover{
+  background-color:rgb(194, 145, 216);
+}
 .encabezado p {
   width: 50%;
   height: 20%;
@@ -191,15 +203,15 @@ tr:last-child:hover td {
 
 .tabForm {
   width: 99%;
-  height: 5%;
+  height: fit-content;
   margin: 1% auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .InputTabla {
-  width: 15%;
+  width: 30%;
   border: solid rgb(120, 89, 179);
   font-size: 13px;
   border-radius: 5px;
@@ -210,6 +222,13 @@ tr:last-child:hover td {
 }
 .tabBtn {
   width: 15%;
+  border-radius: 10px;
+  background-color: rgb(120, 89, 179);
+  border: solid rgb(141, 141, 211);
+
+}
+.tabBtn:hover {
+  background-color:rgb(194, 145, 216);
 }
 
 .añoResaltado{
@@ -322,8 +341,19 @@ form a {
 
 form input {
   margin: 5px;
+  border: solid rgb(120, 89, 179);
+  font-size: 13px;
+  border-radius: 5px;
+  background-color: rgb(141, 141, 211)
 }
-
+.submit{
+  border-radius: 10px;
+  background-color: rgb(120, 89, 179);
+  border: solid rgb(141, 141, 211);
+}
+.submit:hover{
+  background-color:rgb(194, 145, 216);
+}
 form label {
   margin: 5px;
 }
