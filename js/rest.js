@@ -66,7 +66,7 @@ function cargarTabla(jsonLibros) {
 
 
 
-
+//FUNCIONES PARA TRABAJAR CON LA API Y LAS TABLAS
 async function editarFila(event) { //Permite editar la informacion de una fila.
     let id = event.target.id;
     let data = {
@@ -142,6 +142,8 @@ async function agregarFila() { //Agrega una fila.
         }
     }
 }
+
+//FUNCIONES BASICAS PARA INTERACTUAR CON LA API
 async function borrarDatos() { //Borra todos los datos de la API
     try {
         let response = await fetch(baseUrl + grupoId + "/" + coleccionId);
@@ -199,6 +201,7 @@ async function enviarDatos(libros) {
     }
 }
 
+//FILTRADO DE LA TABLA
 function coincide(columnas, textoBuscado) {//Revisa si alguna de las columnas de la fila  coincide con el texto buscado.
     let respuesta = false;
    if (columnas[0].querySelector('a').innerHTML === textoBuscado) {//Hicimos esto porque el texto de la primer columna esta contenido dentro de un <a>.
@@ -234,7 +237,8 @@ function buscarLibros() {
     filtrar(textoBuscado);
 }
 
-//creo datos y retorno el arreglo que los almacena.
+//GENERAR DATOS DE EJEMPLO
+//creo datos y retorno el arreglo que los almacena se usa solo para tener una tabla precargada de ejemplo.
 function generarDatos() {
     let librosPrecargados = [{
             "titulo": "Bullying y abuso infantil",
@@ -268,10 +272,10 @@ function generarDatos() {
 let baseUrl = "http://web-unicen.herokuapp.com/api/groups/"; //la url base de la api
 let grupoId = "grupo126"; //nuestra id
 let coleccionId = "libros"; //la id de nuestra coleccion
-let borrarTabla = document.querySelector("#borrarTabla");
-let botonAgregar = document.querySelector("#agrega");
+let borrarTabla = document.querySelector("#borrarTabla");//Boton para borrar tabla y api.
+let botonAgregar = document.querySelector("#agrega");//Boton para agregar un libro.
+let botonGenerar = document.querySelector("#genera");//boton para generar libros x3.
 botonAgregar.addEventListener("click", agregarFila);
-let botonGenerar = document.querySelector("#genera");
 botonGenerar.addEventListener("click", generarLibros);
 borrarTabla.addEventListener("click", borrarDatos);
 let libros = generarDatos();
