@@ -109,6 +109,14 @@ async function borrarFila(event) { //Borra una fila especifica.
 
 }
 
+async function generarLibros() {//Genera 3 filas automaticamente (es lo minimo que pedia la consigna)
+    agregarFila();
+    agregarFila();
+    agregarFila();
+    agregarFila();
+
+}
+
 async function agregarFila() { //Agrega una fila.
     let data = {
         "thing": {
@@ -263,6 +271,8 @@ let coleccionId = "libros"; //la id de nuestra coleccion
 let borrarTabla = document.querySelector("#borrarTabla");
 let botonAgregar = document.querySelector("#agrega");
 botonAgregar.addEventListener("click", agregarFila);
+let botonGenerar = document.querySelector("#genera");
+botonGenerar.addEventListener("click", generarLibros);
 borrarTabla.addEventListener("click", borrarDatos);
 let libros = generarDatos();
 let buscar = document.querySelector("#filtrar");
